@@ -1,0 +1,12 @@
+a = "54"
+print(type(a))
+a = int(a)
+print(type(a))
+print(a + 5)  
+b='210'
+print(type(b))
+# "31" is a string 
+# 31 is anumeric value
+a=input("entre your age ")
+print(a)
+#if u entre anything in the function it will be cosidered as a string at the begining.
