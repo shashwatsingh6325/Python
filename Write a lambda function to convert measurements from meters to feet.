@@ -1,0 +1,4 @@
+meter_to_feet = lambda meter: meter * 3.28084
+meter_input = float(input("Enter a value in meters: "))
+feet_output = meter_to_feet(meter_input)
+print(f"{feet_output}")
