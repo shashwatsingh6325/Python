@@ -1,0 +1,19 @@
+#The marks scored by a class of students in 5 different subjects are stored in a list of lists. Using the
+#filter function, write a program to find the students who failed in one or more subjects.
+
+def has_failed(student):
+    return any(mark < 40 for mark in student)
+
+students = [
+    [50, 60, 70, 80, 90],  
+    [30, 50, 40, 60, 70],  
+    [60, 70, 80, 90, 40],  
+    [80, 90, 70, 60, 50],  
+    [40, 30, 20, 10, 50],  
+]
+
+failed_students = list(filter(has_failed, students))
+
+print("Failed students:")
+for student in failed_students:
+    print(student)
