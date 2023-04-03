@@ -1,0 +1,12 @@
+#Given the list scores secured by the batsmans over a certain matches, compute the average
+#score of individual batsman, also the individual highest score of the batsman
+scores = {
+    "John": [50, 60, 70, 80, 90],
+    "Jane": [20, 30, 40, 50, 60],
+    "Mike": [10, 20, 30, 40, 50]
+}
+
+for batsman, score_list in scores.items():
+    avg_score = sum(score_list) / len(score_list)
+    max_score = max(score_list)
+    print(f"{batsman}: Average score = {avg_score:.2f}, Highest score = {max_score}")
